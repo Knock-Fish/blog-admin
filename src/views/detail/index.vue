@@ -45,7 +45,6 @@
 </template>
 
 <script setup lang='ts'>
-import { ElSkeleton, ElSkeletonItem } from 'element-plus'
 import ArticleDetail from './widget/ArticleDetail.vue'
 import AnchorNav from './widget/AnchorNav.vue'
 type Article = Api.Article.ArticleInfo
@@ -96,7 +95,7 @@ onMounted(() => {
     display: flex;
     z-index: 10000;
     gap: 10px;
-    margin: 10px auto;
+    margin: 15px;
 
     .article-content {
         box-sizing: border-box;

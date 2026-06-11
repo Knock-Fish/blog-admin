@@ -358,7 +358,8 @@ const editorConfig = ref({
             }
         },
         uploadImage: {
-            server: import.meta.env.VITE_API_URL + '/api/r2-file',
+            // server: import.meta.env.VITE_API_URL + '/api/r2-file',
+            server: '/api/r2-file',
             methods: "POST",
             fieldName: "file",
             headers: {
@@ -379,7 +380,8 @@ const uploadProps = ref<Record<string, any>>({
     headers: {
         'Authorization': `Bearer ${accessToken}`,
     },
-    action: import.meta.env.VITE_API_URL + '/api/r2-file',
+    // action: import.meta.env.VITE_API_URL + '/api/r2-file',
+    action: '/api/r2-file',
 })
 //------------------------------ 方法 -----------------------------------
 /** 新增/保存文章 */
